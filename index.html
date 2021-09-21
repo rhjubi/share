@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>share world</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="log-in" id="log_In">
+<h3><strong>Note</strong>Life</h3>	
+<input class="email" type="text" name="email" placeholder="Email Address">
+<br>
+<input class="password" type="password" name="password" placeholder="Password">
+<button class="fotgot-btn" onclick="forgotpage()">Forgot ?</button>
+<button class="sign-in" type="submit" onclick="gohome()">Sign in</button>
+<h6>Or continue with</h6>
+<div class="sign-up-button-group">
+	<button class="fb-sign-up"><i class="fab fa-facebook-f"></i>Facebook</button>
+	<button class="gl-sign-up"><i class="fab fa-google"></i>Google</button>
+	<button class="ap-sign-up"><i class="fab fa-apple"></i>Apple</button>
+</div>
+<button class="new-user" id="new_User" onclick="adduser()">New User ?</button>
+</div>
+
+
+<div class="sign-up" id="sign_Up">
+<div class="d-flex">
+	<i class="fas fa-caret-left" onclick="signuptoback()"></i>
+	<div>
+		<h5>New User ?</h5>
+		<h6>Register now to continue</h6>
+	</div>
+</div>
+	<input class="full-name" type="text" name="full-name" placeholder="Full Name">
+<br>
+	<input class="email" type="text" name="email" placeholder="Email Address">
+<br>
+<h6>Select Gender</h6>
+<form>
+
+<input type="radio" id="gender_Male" name="gender" value="male">
+<label for="male">Male</label>
+<input type="radio" id="gender_Female" name="gender" value="female">
+<label for="female">Female</label>
+</form>
+
+	<input class="password" type="password" name="password" placeholder="Password">
+<br>
+	<input class="phone-number" type="number" name="phone-number" placeholder="Phone Number">
+<button class="sign-up-btn">Register now</button>
+<p>We'll send verification code on above given number to verify</p>
+</div>
+
+
+<div class="forgot" id="forget">
+<div class="d-flex">
+	<i class="fas fa-caret-left" onclick="forgottoback()"></i>
+	<div>
+		<h5>Forgot Password ?</h5>
+		<h6>Enter Registered email address and we'll guide you to reset the password</h6>
+	</div>
+</div>
+
+	<input class="email" type="text" name="email" placeholder="Email Address">
+<br>
+
+
+<button class="forgot-submit-btn">Submit</button>
+</div>
+
+
+<div class="maindiv" id="home">
+	<div class="logo-p_image">
+	<h4><strong>Note</strong>Life</h4>
+	<img src="pp.jpg" alt="profile image">
+	</div>
+<div class="options">
+	<ul>
+		<li class="active"><a href="#">Following</a></li>
+		<li><a href="#">Trending</a></li>
+		<li><a href="#">Style</a></li>
+		<li><a href="#">Travel</a></li>
+	</ul>
+</div>
+
+<div class="add-button">
+	<i class="fas fa-plus"></i>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+	function adduser() {
+		document.getElementById('sign_Up').style.display = "block";
+    document.getElementById('log_In').style.display = "none";
+	}
+	function signuptoback() {
+		document.getElementById('sign_Up').style.display = "none";
+    document.getElementById('log_In').style.display = "block";
+	}
+	function forgottoback(){
+		document.getElementById('forget').style.display = "none";
+    document.getElementById('log_In').style.display = "block";		
+	}
+	function forgotpage() {
+		document.getElementById('log_In').style.display = "none";
+    document.getElementById('forget').style.display = "block";
+	}
+	function gohome() {
+		document.getElementById('log_In').style.display = "none";
+    document.getElementById('home').style.display = "block";
+	}
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+  $(document).on('click', 'ul li', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

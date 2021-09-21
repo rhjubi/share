@@ -1,0 +1,203 @@
+body
+{
+	display: flex;
+	justify-content: center;
+}
+.log-in,.sign-up,.forgot
+{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 360px;
+	border: 1px solid red;
+	padding: 20px;
+	position: relative;
+}
+.log-in h3,.log-in h6
+{
+	text-align: center;
+}
+h3
+{
+	margin: 80px;
+}
+.input-div
+{
+	display: flex;
+}
+.email,.password,.full-name,.phone-number
+{
+	border: none;
+	border-bottom: .5px solid grey;
+	outline: red;
+	padding: 7px 5px;
+	font-weight: 500;
+}
+label
+{
+	padding: 7px 5px;
+	font-weight: 500;
+	color: grey;
+}
+.fotgot-btn
+{
+	background: transparent;
+	color: red;
+	border: none;
+	outline: none;
+	font-weight: 500;
+	position: relative;
+	right: -70%;
+	width: 90px;
+}
+.sign-in,.sign-up-btn,.forgot-submit-btn
+{
+	margin: 20px 0;
+	padding: 7px;
+	border-radius: 5px;
+	background: red;
+	color: white;
+	border: none;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+.sign-up-button-group
+{
+	margin: 5px 0 10px 0; 
+	display: flex;
+	justify-content: space-around;
+}
+.fb-sign-up,.gl-sign-up,.ap-sign-up
+{
+	padding: 4px 13px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: 500;
+}
+.log-in i
+{
+	margin: 0 8px 0 0;
+	font-weight: 500;
+}
+.fb-sign-up
+{
+	background: #4267B2;
+}
+.gl-sign-up
+{
+	background: #3cba54;
+}
+.ap-sign-up
+{
+	background: #A2AAAD;
+}
+.new-user
+{
+	margin: 20px 0;
+	padding: 7px;
+	border-radius: 5px;
+	color: red;
+	border: .5px solid red;
+	background: transparent;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+.full-name
+{
+	margin-top: 50px;
+}
+.sign-up p
+{
+	text-align: center;
+	font-size: 12px;
+	padding: 0 50px;
+}
+.sign-up h6,.forgot h6
+{
+	color: grey;
+	font-weight: 500;
+}
+.sign-up-btn
+{
+	margin-top: 60px;
+}
+.sign-up i,.forgot i
+{
+	margin: 5px 15px 5px 5px;
+	font-size: 20px;
+}
+.sign-up i:hover
+{
+	cursor: pointer;
+}
+.forgot i:hover
+{
+	cursor: pointer;
+}
+.forgot .email
+{
+	margin-top: 50px;
+}
+#sign_Up,#forget,#home
+{
+	display: none;
+}
+.maindiv
+{
+	height: 100vh;
+	width: 360px;
+	border: 1px solid red;
+	padding: 20px;
+	position: relative;
+}
+.logo-p_image
+{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.logo-p_image img
+{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+.options
+{
+	margin: 15px 0 0 50px;
+}
+.options ul
+{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+}
+.options ul a
+{
+	color: black;
+	text-decoration: none;
+}
+.options ul li.active a
+{
+	color: red;
+}
+.add-button
+{
+	background: red;
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	bottom: 12%;
+	right: 5%;
+}
+.add-button i
+{
+	color: white;
+	font-size: 20px;
+}
